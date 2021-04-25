@@ -21,7 +21,7 @@ jobs:
         run: echo "REPORT_DATE=$(TZ=':Asia/Shanghai' date '+%Y-%m-%d %T')" >> $GITHUB_ENV
       # 使用现成的发送邮箱的GitHub action来发送邮件
       - name: 'Send mail'
-        uses: mauhin/action-send-mail@master
+        uses: dawiid6/action-send-mail@master
         with:
           # 这些是发送邮件需要配置的参数，更多详细的说明请访问具体的仓库
           server_address: smtp.qq.com
