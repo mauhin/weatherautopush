@@ -18,7 +18,7 @@ jobs:
         run: bash ./weather.sh
       # 获取格式化的日期并存入GitHub内置的环境变量中
       - name: 'Get Date'
-        run: echo "REPORT_DATE=$(TZ=':Asia/Shanghai' date '+%Y-%m-%d %T')" >> $GITHUB_ENV
+        run: echo "REPORT_DATE=$(TZ=':Asia/Zhengzhou' date '+%Y-%m-%d %T')" >> $GITHUB_ENV
       # 使用现成的发送邮箱的GitHub action来发送邮件
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@master
